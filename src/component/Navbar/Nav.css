@@ -1,0 +1,23 @@
+.nav {
+    height: 90px;
+    background-color: white !important;
+}
+
+.nav .container {
+    margin: 0 108px;
+}
+
+.nav .logo_text {
+    color: #008ECC;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F3F9FB;
+    margin-top: 2px;
+}

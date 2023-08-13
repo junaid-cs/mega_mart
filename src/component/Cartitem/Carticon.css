@@ -1,0 +1,24 @@
+.cart_icon span {
+    font-weight: 700;
+}
+
+.cart_icon .cart_length {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 10px !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    background: #008ECC;
+    margin-left:12px ;
+     color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 10px;
+font-style: normal;
+font-weight: 700;
+line-height: 18px; /* 180% */
+}
