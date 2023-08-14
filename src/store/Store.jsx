@@ -1,16 +1,31 @@
-import { configureStore } from '@reduxjs/toolkit';
-import cartReducer from './Slices/cartSlice'; // Assuming you have a userSlice.js file with a userReducer
-import UserReducer from './Slices/UserSlice'; // Assuming you have a userSlice.js file with a userReducer
-import Filtersclice from './Slices/Filteritems'; 
+// configureStore.js
+import { configureStore ,combineReducers} from '@reduxjs/toolkit';
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 
+import cartReducer from './Slices/cartSlice';
+import UserReducer from './Slices/UserSlice';
+import Filtersclice from './Slices/Filteritems';
 
-// Create the Redux store
+const persistConfig = {
+  key: 'root',
+  storage,
+  whitelist: ['cart'],
+};
+
+const persistedReducer = persistReducer(
+  persistConfig,
+  combineReducers({
+    cart: cartReducer,
+    user: UserReducer,
+    filter: Filtersclice,
+  })
+);
+
 const store = configureStore({
-  reducer: {
-    cart: cartReducer, // Add other reducers here if needed
-    user : UserReducer,
-    filter:Filtersclice,
-  },
+  reducer: persistedReducer,
 });
 
-export default store;
+const persistor = persistStore(store); // Export the persistor
+
+export { store, persistor }; // Export both the store and persistor

@@ -5,8 +5,8 @@ import {  useDispatch } from 'react-redux';
 
 function AddtoCart({item}) {
     const dispatch = useDispatch();
+    // let arr = [];
     const handleAdd = (product)=>{
-       
         dispatch(add(product));
       }
   return (
