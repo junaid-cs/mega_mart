@@ -77,3 +77,9 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+
+@media screen and (max-width:1000px) {
+    .input-group{
+        width: 100%;
+    }
+}

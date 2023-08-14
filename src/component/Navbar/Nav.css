@@ -21,3 +21,10 @@
     background: #F3F9FB;
     margin-top: 2px;
 }
+
+.mx-common{
+    margin: 0 8.33% !important;
+}
+.ms-common{
+    margin: 0 0 0 8.33% !important;
+}

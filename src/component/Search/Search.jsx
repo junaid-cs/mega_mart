@@ -32,15 +32,15 @@ const Search = () => {
     }
     return (
 
-        <div class="input-group position-relative">
-            <button class="btn  dropdown-toggle text-capitalize" type="button" data-bs-toggle="dropdown" aria-expanded="false">{val}</button>
-            <ul class="dropdown-menu">
+        <div className="input-group position-relative">
+            <button className="btn  dropdown-toggle text-capitalize" type="button" data-bs-toggle="dropdown" aria-expanded="false">{val}</button>
+            <ul className="dropdown-menu">
                 {dropdowndata.map(category => (
-                    <li key={category}><a  class="dropdown-item text-capitalize" data-value={category} onClick={()=>{handlClick(category)}} href="#">{category}</a></li>
+                    <li key={category}><a  className="dropdown-item text-capitalize" data-value={category} onClick={()=>{handlClick(category)}} href="#">{category}</a></li>
                 ))}
             </ul>
-            <input type="text" onChange={handleChange} class="form-control" placeholder='Search here...' aria-label="Text input with dropdown button" />
-            <img src={SearchIcon} className='search_icon' alt="" srcset="" />
+            <input type="text" onChange={handleChange} className="form-control" placeholder='Search here...' aria-label="Text input with dropdown button" />
+            <img src={SearchIcon} className='search_icon' alt="" />
         </div>
     )
 }
