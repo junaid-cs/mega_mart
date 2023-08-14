@@ -6,7 +6,7 @@ import {  useDispatch } from 'react-redux';
 function AddtoCart({item}) {
     const dispatch = useDispatch();
     const handleAdd = (product)=>{
-        console.log(product);
+       
         dispatch(add(product));
       }
   return (

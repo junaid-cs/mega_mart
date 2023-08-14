@@ -12,14 +12,13 @@ function App() {
   const {data,loading,error} = useSelector(state => state.user);
   const obj = useSelector(state=>state.filter)
   const {filteredProducts,searchValue} = useSelector(state=>state.filter)
-// console.log(data.map(item=>item))
+
 const dispatch = useDispatch()
 useEffect( () => {
  let url="https://fakestoreapi.com/products"
   dispatch(fetchdata(url))
 },[]);
-// dispatch(filterproducts());
- console.log(`filteredProducts ${filteredProducts}  search ${searchValue}`)
+
  
   return (
     <>

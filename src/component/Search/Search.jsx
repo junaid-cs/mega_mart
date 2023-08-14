@@ -17,15 +17,14 @@ const Search = () => {
             const response = await fetch("https://fakestoreapi.com/products/categories")
             const data = await response.json()
             setDropdowndata(["All",...data]);
-            // console.log(`dropdowndata ${data}`);
+           
         }
         fetchdata();
     }, [])
     const handlClick = (e) => {
-        // let a = e.target.getAttribute('data-value');
         setVal(e);
         dispatch(filterProducts(e));
-        // console.log(`filterProduts ${filterProduts}`);
+    
     }
     const handleChange = (e)=>{
           let  value = e.target.value;
