@@ -25,7 +25,7 @@ const Navbar = () => {
   console.log(screenWidth);
     
   return (
-    <div className=' mb-5'>
+    <div className=' mb-5 position-fixed w-100 z-3'>
     <nav className="navbar navbar-expand nav bg-body-tertiary d-flex justify-content-between" data-bs-theme="white">
   <div className="container-fluid mx-common">
     <div className="logo_continer d-flex gap-3">

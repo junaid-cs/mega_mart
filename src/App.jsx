@@ -65,7 +65,7 @@ function App() {
                 : null
             }
           </div>
-          <div className="card-body bg-white  w-100">
+          <div className="card-body bg-white  w-100 ">
             <div className="d-sm-flex">
             <div className='card_title'>{item.title.split(' ').slice(0, 3).join(' ')}</div>
             <div className="card_price">${item.price}</div>
@@ -95,7 +95,7 @@ function App() {
 
   return (
     <>
-      <div className="row container-fluid ms-common col-11  gap-3 mx-auto">
+      <div className="row container-fluid ms-common col-11  gap-3 mx-auto mt-5" >
         {filteredData}
       </div>
     </>
