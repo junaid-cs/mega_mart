@@ -1,8 +1,8 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 // Action
-export const fetchdata = createAsyncThunk("fetchdata", async () => {
-  const response = await fetch("https://fakestoreapi.com/products");
+export const fetchdata = createAsyncThunk("fetchdata", async (url) => {
+  const response = await fetch(url);
   return response.json();
 });
 
