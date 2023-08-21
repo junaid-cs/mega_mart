@@ -22,7 +22,6 @@ const Navbar = () => {
     };
     
   }, []);
-  console.log(screenWidth);
     
   return (
     <div className=' mb-5 position-fixed w-100 z-3'>

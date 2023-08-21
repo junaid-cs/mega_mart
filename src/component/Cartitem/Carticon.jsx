@@ -4,6 +4,7 @@ import Buy from '../../assets/Buy.svg'
 import './Carticon.css'
 
 const Carticon = () => {
+  // useSelector hook allow user to get data from store
     const item = useSelector(state => state.cart);
   return (
     <div className='cart_icon d-flex align-items-center'> 

@@ -2,7 +2,9 @@ import React from 'react';
 
 const StarRating = ({ rating }) => {
   const maxRating = 5;
+  // firts it make the value of the star is round value if the value is 4.5 so it make only 4
   const filledStars = Math.floor(rating);
+  // It return ture or false value
   const hasHalfStar = rating % 1 !== 0; // Check for half-filled star
 
   const filledStarIcon = <span className='text-warning'>&#9733;</span>; // Filled star unicode character

@@ -6,7 +6,7 @@ const initialState = {
 };
 
 const userSlice = createSlice({
-  name: 'user',
+  name: 'filter',
   initialState,
   reducers: {
     filterProducts(state, action) {
