@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import './Search.css'
 import SearchIcon from '../../assets/Search.svg'
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchdata } from '../../store/Slices/UserSlice'
 import { filterProducts,setSearchValue} from '../../store/Slices/Filteritems'
 
 const Search = () => {

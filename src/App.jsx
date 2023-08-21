@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import AddtoCart from './component/AddtoCart/AddtoCart';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchdata } from './store/Slices/UserSlice';
 import StarRating from './component/StarRating/StarRating';
 import { motion } from 'framer-motion';
 
